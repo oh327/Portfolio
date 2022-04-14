@@ -1,18 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BR Architects</title>
+
+    <!-- 크로스 브라우징 호환성 부분 시작  -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <!-- 공지사항 알림 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
-    <script src="../js/notice.js"></script>
-    <script>
-        // Notice.init('본인이름', 'pdf파일경로');
-        Notice.init('오현정', './01-BRArchitects.pdf');
-    </script>
+<div id="container">
+    <h1 class="sound_only">BR Architects</h1>
+
+    <!-- Header -->
+    <header id="header" class="clear_fix">
+        <h2>
+            <a href="#home">
+                <strong>BR</strong> Architects
+            </a>
+        </h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#projects">projects</a>
+                </li>
+                <li>
+                    <a href="#about">about</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <h2><strong>BR</strong> Architects</h2>
+        <img src="img/architect.jpg" alt="BR Architects" />
+    </section>
+
+    <!-- Projects -->
+    <section id="project" class="common_box">
+        <h2 class="tit">projects</h2>
+        <div class="project_list">
+            <ul class="clear_fix">
+                <li>
+                    <img src="img/house5.jpg" alt="Summer House" />
+                    <span>Summer House</span>
+                </li>
+                <li>
+                    <img src="img/house2.jpg" alt="Brick House" />
+                    <span>Brick House</span>
+                </li>
+                <li>
+                    <img src="img/house3.jpg" alt="Renovated" />
+                    <span>Renovated</span>
+                </li>
+                <li>
+                    <img src="img/house4.jpg" alt="Barn House" />
+                    <span>Barn House</span>
+                </li>
+                <li>
+                    <img src="img/house2.jpg" alt="Summer House" />
+                    <span>Summer House</span>
+                </li>
+                <li>
+                    <img src="img/house5.jpg" alt="Brick House" />
+                    <span>Brick House</span>
+                </li>
+                <li>
+                    <img src="img/house4.jpg" alt="Renovated" />
+                    <span>Renovated</span>
+                </li>
+                <li>
+                    <img src="img/house3.jpg" alt="Barn House" />
+                    <span>Barn House</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="common_box">
+        <h2 class="tit">about</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="team_list">
+            <ul class="clear_fix">
+                <li>
+                    <img src="img/team2.jpg" alt="John Doe" />
+                    <p class="team_name">John Doe</p>
+                    <span class="team_job">CEO & Founder</span>
+                    <p class="team_desc">
+                        Phasellus eget enim eu lectus faucibus 
+                        vestibulum. Suspendisse sodales pellentesque 
+                        elementum.
+                    </p>
+                    <button type="button">Contact</button>
+                </li>
+                <li>
+                    <img src="img/team1.jpg" alt="Jane Doe" />
+                    <p class="team_name">Jane Doe</p>
+                    <span class="team_job">Architect</span>
+                    <p class="team_desc">
+                        Phasellus eget enim eu lectus faucibus 
+                        vestibulum. Suspendisse sodales pellentesque 
+                        elementum.
+                    </p>
+                    <button type="button">Contact</button>
+                </li>
+                <li>
+                    <img src="img/team3.jpg" alt="Mike Ross" />
+                    <p class="team_name">Mike Ross</p>
+                    <span class="team_job">Architect</span>
+                    <p class="team_desc">
+                        Phasellus eget enim eu lectus faucibus 
+                        vestibulum. Suspendisse sodales pellentesque 
+                        elementum.
+                    </p>
+                    <button type="button">Contact</button>
+                </li>
+                <li>
+                    <img src="img/team4.jpg" alt="Dan Star" />
+                    <p class="team_name">Dan Star</p>
+                    <span class="team_job">Architect</span>
+                    <p class="team_desc">
+                        Phasellus eget enim eu lectus faucibus 
+                        vestibulum. Suspendisse sodales pellentesque 
+                        elementum.
+                    </p>
+                    <button type="button">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="common_box">
+        <h2 class="tit">contact</h2>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form>
+            <p>
+                <input type="text" name="Name" placeholder="Name" required />
+            </p>
+            <p>
+                <input type="text" name="Email" placeholder="Email" required />
+            </p>
+            <p>
+                <input type="text" name="Subject" placeholder="Subject" required />
+            </p>
+            <p>
+                <input type="text" name="Comment" placeholder="Comment" required />
+            </p>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <!-- Image of location/map -->
+    <div id="map" class="common_box">
+        <img src="img/map.jpg" alt="" />
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+        </h2>
+    </footer>
+</div>
+
+<!-- 공지사항 알림 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+<script src="../js/notice.js"></script>
+<script>
+    // Notice.init('본인이름', 'pdf파일경로');
+    Notice.init('오현정', './01-BRArchitects.pdf');
+</script>
 </body>
 </html>

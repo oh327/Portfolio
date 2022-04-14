@@ -1,18 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>My Food</title>
+
+    <!-- 크로스 브라우징 호환성 부분 시작  -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <!-- Font - Karma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 공지사항 알림 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
-    <script src="../js/notice.js"></script>
-    <script>
-        // Notice.init('본인이름', 'pdf파일경로');
-        Notice.init('오현정', './03-MyFood.pdf');
-    </script>
+<!-- All Contents -->
+<div id="container">
+    <h1 class="sound_only">My Food</h1>
+
+    <!-- Fixed Header -->
+    <header id="header">
+        <h2 class="sound_only">Fixed Header</h2>
+        <div class="hd_center clear_fix">
+            <h3>My Food</h3>
+            <button type="button">☰</button>
+            <div>Mail</div>
+        </div>
+    </header>
+
+    <!-- Contents -->
+    <div id="contents">
+        <h2 class="sound_only">My Food</h2>
+
+        <!-- Food Photo Grid-->
+        <section id="food">
+            <h3 class="sound_only">Photo Grid</h3>
+            <div class="food_grid">
+                <ul class="clear_fix">
+                    <li class="food_box">
+                        <img src="img/sandwich.jpg" alt="Sandwich" />
+                        <p>The Perfect Sandwich, A Real NYC Classic</p>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                    <li class="food_box">
+                        <img src="img/steak.jpg" alt="Steak" />
+                        <p>Let Me Tell You About This Steak</p>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                    <li class="food_box">
+                        <img src="img/cherries.jpg" alt="Cherries" />
+                        <p>Cherries, interrupted</p>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        <p>What else?</p>
+                    </li>
+                    <li class="food_box">
+                        <img src="img/wine.jpg" alt="Pasta and Wine" />
+                        <p>Once Again, Robust Wine and Vegetable Pasta</p>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                </ul>
+                <ul class="clear_fix">
+                    <li class="food_box">
+                        <img src="img/popsicle.jpg" alt="Popsicle" />
+                        <p>All I Need Is a Popsicle</p>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                    <li class="food_box">
+                        <img src="img/salmon.jpg" alt="Salmon" />
+                        <p>Salmon For Your Skin</p>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                    <li class="food_box">
+                        <img src="img/sandwich.jpg" alt="Sandwich" />
+                        <p>The Perfect Sandwich, A Real Classic</p>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                    <li class="food_box">
+                        <img src="img/croissant.jpg" alt="Croissant" />
+                        <p>Le French</p>
+                        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Pagination -->
+            <div class="pager_wrap">
+                <div class="pager clear_fix">
+                    <a href="#">«</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">»</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h3>About Me, The Food Man</h3>
+            <br />
+            <img src="img/chef.jpg" alt="chef" />
+            <div>
+                <h4><strong>I am Who I Am!</strong></h4>
+                <i>With Passion For Real, Good Food</i>
+                <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="clear_fix">
+        <h2 class="sound_only">하단 정보</h2>
+        <div class="ft_footer">
+            <h3>FOOTER</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+        <div class="ft_blog">
+            <h3>BLOG POSTS</h3>
+            <ul>
+                <li class="clear_fix">
+                    <img src="img/workshop.jpg" alt="workshop" />
+                    <p>
+                        <span>Lorem</span>
+                        <span>Sed mattis nunc</span>
+                    </p>
+                </li>
+                <li class="clear_fix">
+                    <img src="img/gondol.jpg" alt="gondol" />
+                    <p>
+                        <span>Ipsum</span>
+                        <span>Praes tinci sed</span>
+                    </p>
+                </li> 
+            </ul>
+        </div>
+        <div class="ft_tags">
+            <h3>POPULAR TAGS</h3>
+            <p>
+                <span class="active">Travel</span>
+                <span>New York</span>
+                <span>Dinner</span>
+                <span>Salmon</span>
+                <span>France</span>
+                <span>Drinks</span>
+                <span>Ideas</span>
+                <span>Flavors</span>
+                <span>Cuisine</span>
+                <span>Chicken</span>
+                <span>Dressing</span>
+                <span>Fried</span>
+                <span>Fish</span>
+                <span>Duck</span>
+            </p>
+        </div>
+    </footer>
+</div>
+
+<!-- 공지사항 알림 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+<script src="../js/notice.js"></script>
+<script>
+    // Notice.init('본인이름', 'pdf파일경로');
+    Notice.init('오현정', './03-MyFood.pdf');
+</script>
 </body>
 </html>

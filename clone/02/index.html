@@ -1,18 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Gourmet au Catering</title>
+
+    <!-- 크로스 브라우징 호환성 부분 시작  -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <!-- 공지사항 알림 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
-    <script src="../js/notice.js"></script>
-    <script>
-        // Notice.init('본인이름', 'pdf파일경로');
-        Notice.init('오현정', './02-GourmetCatering.pdf');
-    </script>
+<div id="container">
+    <h1 class="sound_only">Gourmet au Catering</h1>
+
+    <!-- Header -->
+    <header id="header"  class="clear_fix">
+        <h2>
+            <a href="#home">Gourmet au Catering</a>
+        </h2>
+        <nav>
+            <ul class="clear_fix">
+                <li>
+                    <a href="#about">about</a>
+                </li>
+                <li>
+                    <a href="#menu">menu</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>Le Catering</h2>
+        <img src="img/hamburger.jpg" alt="hamburger" />
+    </section>
+
+    <!-- About -->
+    <section id="about" class="center_box clear_fix">
+        <h2 class="sound_only">About Catering</h2>
+        <div>
+            <img src="img/tablesetting2.jpg" alt="tablesetting2" />
+        </div>
+        <div>
+            <h3>About Catering</h3>
+            <br>
+            <h4>Tradition since 1889</h4>
+            <p>
+                The Catering was founded in blabla by Mr. Smith in lorem ipsum
+                dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                 pariatur.We only use <span>seasonal</span> ingredients.
+            </p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum consectetur adipiscing
+                elit, sed do eiusmod temporincididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Menu -->
+    <section id="menu" class="center_box clear_fix">
+        <h2 class="sound_only">Our Menu</h2>
+        <div>
+            <h3>Our Menu</h3>
+            <br />
+            <ul>
+                <h4 class="sound_only">our menu list</h4>
+                <li>
+                    <h5>Bread Basket</h5>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                </li>
+                <br />
+                <li>
+                    <h5>Honey Almond Granola with Fruits</h5>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                </li>
+                <br />
+                <li>
+                    <h5>Belgian Waffle</h5>
+                    <p>Vanilla flavored batter with malted flour 7.50</p>
+                </li>
+                <br />
+                <li>
+                    <h5>Scrambled eggs</h5>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                </li>
+                <br />
+                <li>
+                    <h5>Blueberry Pancakes</h5>
+                    <p>With syrup, butter and lots of berries 8.50</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="img/tablesetting.jpg" alt="tablesetting" />
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <br />
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <strong>Catering Service, 42nd Living St, 43043 New York, NY</strong>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <form>
+            <p>
+                <input type="text" name="Name" placeholder="Name" required />
+            </p>
+            <p>
+                <input type="number" name="People" placeholder="How many people" required />
+            </p>
+            <p>
+                <input type="datetime-local" name="date" value="2020-11-16T20:00" placeholder="Date and time" required />
+            </p>
+            <p>
+                <input type="text" name="Message" placeholder="Message \ Special requirements" required />
+            </p>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a>
+        </h2>
+    </footer>
+</div>
+
+<!-- 공지사항 알림 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+<script src="../js/notice.js"></script>
+<script>
+    // Notice.init('본인이름', 'pdf파일경로');
+    Notice.init('오현정', './02-GourmetCatering.pdf');
+</script>
 </body>
 </html>

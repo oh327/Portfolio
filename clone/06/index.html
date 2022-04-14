@@ -1,18 +1,552 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>현대자동차 글로벌 공식 웹사이트 | 현대자동차 월드와이드</title>
+
+    <!-- 크로스 브라우징 호환성 부분 시작  -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <!-- 공지사항 알림 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
-    <script src="../js/notice.js"></script>
-    <script>
-        // Notice.init('본인이름', 'pdf파일경로');
-        Notice.init('오현정', './06-Hyundai.pdf');
-    </script>
+<!-- Header -->
+<div class="header_wrap">
+    <div class="hd_content">
+        <div class="hd_inner clear_fix">
+            <div class="logo">
+                <a href="https://www.hyundai.com/worldwide/ko/">
+                    <img src="img/logo.png" alt="hyundai" />
+                </a>
+            </div>
+            <nav class="navi">
+                <h2 class="sound_only">현대자동차 월드와이드 글로벌 네비게이션</h2>
+                <ul class="clear_fix">
+                    <li>
+                        <a href="https://www.hyundai.com/worldwide/ko/brand" target="_self">브랜드</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hyundai.com/worldwide/ko/ioniq" target="_self">아이오닉</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hyundai.com/worldwide/ko/lifestyle" target="_self">라이프스타일</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hyundai.com/kr/ko/e" target="_blank">모델</a>
+                    </li>
+                    <li>
+                        <a class="gnb_hover">회사소개</a>
+                        <div class="gnb_2depth_wrap">
+                            <button class="ico_close gnb_2depth_close">
+                                <span class="sound_only">Close</span>
+                            </button>
+                            <ul class="gnb_2depth">
+                                <li>
+                                    <a href="https://www.hyundai.com/worldwide/ko/brand/our-brand-vision" target="_self">기업이념</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hyundai.com/worldwide/ko/company/sustainability" target="_self">지속가능성</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hyundai.com/worldwide/ko/company/hyundai-world-wide" target="_self">해외사업망</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hyundai.com/worldwide/ko/company/ir" target="_self">IR정보</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hyundai.com/kr/ko/company-intro/pr-department/news-focus/news" target="_blank">뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hyundai.com/kr/ko/ask" target="_blank">문의하기</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="gnb_right clear_fix">
+                <li>
+                    <a href="https://www.hyundai.com/worldwide/ko/company/hyundai-world-wide" class="ico_company" target="_self">
+                        <span class="sound_only">해외 법인 사이트 찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://channel.hyundai.com/" class="ico_channelH noafter" target="_blank">
+                        <span class="sound_only">Go to channel hyundai page</span>
+                    </a>
+                </li>
+                <li>
+                    <button class="ico_search">검색</button>
+                    <div class="gnb_search_area">
+                        <div class="gnb_search_inner">
+                            <div class="gnb_input">
+                                <div class="search_input">
+                                    <span class="sound_only">Search</span>
+                                    <input type="search" class="search_input" placeholder="검색어를 입력해 주세요." />
+                                </div>
+                                <button class="btn_search">검색</button>
+                                <button class="btn_reset">reset</button>
+                            </div>
+
+                            <div class="gnb_topic">
+                                <span class="topic_tit">추천 검색어</span>
+                                <div class="topic_list">
+                                    <a href="https://www.hyundai.com/worldwide/ko/search?query=IONIQ%205&_charset=utf-8">IONIQ 5</a>                                
+                                    <a href="https://www.hyundai.com/worldwide/ko/search?query=NEXO&_charset_=utf-8">NEXO</a>                                
+                                    <a href="https://www.hyundai.com/worldwide/ko/search?query=Elantra&_charset_=utf-8">Elantra</a>
+                                    <a href="https://www.hyundai.com/worldwide/ko/search?query=Kona&_charset=utf-8">Kona</a>                                
+                                    <a href="https://www.hyundai.com/worldwide/ko/search?query=Sustainability&_charset_=utf-8">Sustainability</a>                                
+                                    <a href="https://www.hyundai.com/worldwide/ko/search?query=EV&_charset_=utf-8">EV</a>
+                                </div>
+                            </div>
+
+                            <button class="ico_close search_close">
+                                <img src="img/btn_search_close.png" alt="검색창 닫기" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gnb_bg"></div>
+                </li>
+                <li>
+                    <button class="btn_language">Language</button>
+                    <ul class="language_list">
+                        <li>
+                            <a href="https://www.hyundai.com/worldwide/en/" target="_self" title="English">English</a>
+                        </li>
+                        <li class="on">
+                            <a href="https://www.hyundai.com/worldwide/ko" target="_self" title="한국어">한국어</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- // Header -->
+
+<!-- Main Layout -->
+<div class="container">
+    <!-- Hashtag -->
+    <div class="hashtag_wrapper">
+        <div class="hashtag_inner hashtagSwiper">
+            <ul class="hashtag_list swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%EC%95%84%EC%9D%B4%EC%98%A4%EB%8B%89-5" target="_self">
+                        <span># 아이오닉 5</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%EC%9D%B8%ED%84%B0%EB%B7%B0" target="_self">
+                        <span># 인터뷰</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%EB%84%A5%EC%8F%98" target="_self">
+                        <span># 넥쏘</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B9%84%EC%A0%84" target="_self">
+                        <span># 브랜드비전</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8-%C3%97-%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8" target="_self">
+                        <span># 현대자동차 × 방탄소년단</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%EC%95%84%EC%9E%84%EC%9D%B8%EC%B0%A8%EC%A7%80" target="_self">
+                        <span># 아임인차지</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.for-tomorrow" target="_self">
+                        <span># for tomorrow</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8-%C3%97-%EB%B8%94%EB%A3%B8%EB%B2%84%EA%B7%B8" target="_self">
+                        <span># 현대자동차 × 블룸버그</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.thisisus" target="_self">
+                        <span># thisisus</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="https://www.hyundai.com/worldwide/ko.keyword.%EC%B9%9C%ED%99%98%EA%B2%BD" target="_self">
+                        <span># 친환경</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- // Hashtag -->
+
+    <!-- Main Image -->
+    <div class="article_contents">
+        <div class="imgContent main_hero clear_fix">
+            <h2>
+                <span class="category">지속가능한 생활</span>
+                <p>나만의 도시 정원을 가꾸는 법</p>
+            </h2>
+            <div class="imgArea">
+                <a href="https://www.hyundai.com/worldwide/ko/lifestyle/how-to-create-your-own-urban-garden">
+                    <img src="img/40-lifestyle-urban-gardening-pc-736.jpg" width="736" alt="나만의 도시 정원을 가꾸는 법">
+                </a>
+            </div>
+            <div class="imgArea">
+                <h3 class="bg_in_txt">
+                    <span class="category">지속가능 모빌리티</span>
+                    <p>Power your beat: 아이오닉 5의<br />파워를 이용한 DJ공연</p>
+                </h3>
+                <a href="https://www.hyundai.com/worldwide/ko/ioniq/power-your-beat-dj-set">
+                    <img src="img/11-ioniq-power-your-beat-pc-352x390.jpg" width="352" alt="나만의 도시 정원을 가꾸는 법">
+                </a>
+            </div>
+        </div>
+        <div class="imgContent main_article_list clear_fix">
+            <div class="main_article clear_fix">
+                <div class="imgArea">
+                    <a href="/worldwide/ko/ioniq/ioniq-forest-sinsido-project" target="_self">
+                        <img src="img/05-n-drive-high-performance-pc-448.jpg" width="448" alt="고성능 차를 운전하는 방법" />
+                        <p class="colTit">
+                            <span class="category">고성능</span>
+                            <span>고성능 차를 운전하는 방법</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="/worldwide/ko/brand/ces-2022" target="_self">
+                        <img src="img/86-brand-tucson-asmr-pc-352x400.jpg" width="352" alt="현대자동차 × WhisperAudios ASMR – 투싼과 함께 ASMR 사운드스케이프를 제작하다" />
+                        <p class="colTit">
+                            <span class="category">파트너십</span>
+                            <span>현대자동차 × WhisperAudios ASMR – 투싼과<br />함께 ASMR 사운드스케이프를 제작하다</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-4" target="_self">
+                        <img src="img/10-chasing-stars-pc-256.jpg" width="256" alt="밤하늘 별자리를 만나다: 아이오닉 5와 함께 맞이하는 새해" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>밤하늘 별자리를 만나다: 아이오닉 5<br />와 함께 맞이하는 새해</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="imgContent main_article_list clear_fix">
+            <div class="main_article clear_fix">
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com/worldwide/ko/ioniq/ioniq-forest-sinsido-project" target="_self">
+                        <img src="img/09-ioniq-forest-pc-256.jpg" width="256" alt="아이오닉 포레스트 신시도 프로젝트: 다음 세대를 위한 나무 심기" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>아이오닉 포레스트 신시도 프로젝트:<br />다음 세대를 위한 나무 심기</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com/worldwide/ko/brand/ces-2022" target="_self">
+                        <img src="img/85-brand-ces-2022-pc-448.jpg" width="448" alt="CES 2022: 현대자동차, 로보틱스와 메타버스가 결합된 메타모빌리티로 이동 경험의 영역을 확장하다" />
+                        <p class="colTit">
+                            <span class="category">브랜드</span>
+                            <span>CES 2022: 현대자동차, 로보틱스와 메타버스가 결합된 메타모<br />빌리티로 이동 경험의 영역을 확장하다</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com//worldwide/ko/ioniq/david-de-rothschild-hyundai-part-4" target="_self">
+                        <img src="img/08-ioniq-david-de-rothschild-part4-pc-352x400.jpg" width="352" alt="데이비드 드 로스차일드 × 현대자동차 - 차세대 탐험가에게 주는 영감" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>데이비드 드 로스차일드 × 현대자동차 - 차세대 탐<br />험가에게 주는 영감</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="imgContent main_article_list clear_fix">
+            <div class="main_article clear_fix">
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com/worldwide/ko/ioniq/ioniq-forest-sinsido-project" target="_self">
+                        <img src="img/07-ioniq-david-de-rothschild-part3-pc-352x400.jpg" width="352" alt="데이비드 드 로스차일드 × 현대자동차 – 모빌리티의 미래" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>데이비드 드 로스차일드 × 현대자동차 – 모빌리티의<br />미래</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com/worldwide/ko/brand/ces-2022" target="_self">
+                        <img src="img/06-ioniq-david-de-rothschild-part2-pc-352x400.jpg" width="352" alt="데이비드 드 로스차일드 × 현대자동차 – 자연에게 목소리를 주다" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>데이비드 드 로스차일드 × 현대자동차 – 자연에게<br />목소리를 주다</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com//worldwide/ko/ioniq/david-de-rothschild-hyundai-part-4" target="_self">
+                        <img src="img/05-ioniq-david-de-rothschild-part1-pc-352x400.jpg" width="352" alt="데이비드 드 로스차일드 × 현대자동차 - 자연 환경 보호를 최우선으로 하는 협업" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>데이비드 드 로스차일드 × 현대자동차 - 자연 환경<br />보호를 최우선으로 하는 협업</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="imgContent main_article_list clear_fix">
+            <div class="main_article clear_fix">
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com/worldwide/ko/ioniq/ioniq-forest-sinsido-project" target="_self">
+                        <img src="img/84-brand-heritage-grandeur-pc-448.jpg" width="448" alt="헤리티지 시리즈 그랜저: 모던하게 재탄생된 1986년 플래그십 세단" />
+                        <p class="colTit">
+                            <span class="category">브랜드</span>
+                            <span>헤리티지 시리즈 그랜저: 모던하게 재탄생된 1986년 플래그십 세<br />단</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com/worldwide/ko/brand/ces-2022" target="_self">
+                        <img src="img/83-brand-ev-literacy-part-three-pc-352x400.jpg" width="352" alt="브리타 라이니키 × 현대자동차 – 전기차 주행에 관한 다섯 가지 질문" />
+                        <p class="colTit">
+                            <span class="category">브랜드</span>
+                            <span>브리타 라이니키 × 현대자동차 – 전기차 주행에 관<br />한 다섯 가지 질문</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="imgArea">
+                    <a href="https://www.hyundai.com//worldwide/ko/ioniq/david-de-rothschild-hyundai-part-4" target="_self">
+                        <img src="img/04-ioniq-seven-pc-256.jpg" width="256" alt="아이오닉 콘셉트카 '세븐' : '나만의 시간(Me Time)'과 '가족과의 시간(Family Time)'을 위한 혁신" />
+                        <p class="colTit">
+                            <span class="category">아이오닉</span>
+                            <span>아이오닉 콘셉트카 '세븐' : "나만의 시<br />간(Me Time)"과 "가족과의 시간<br />(Family Time)"을 위한 혁신</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // Main Image -->
+
+    <!-- Sites By Country -->
+    <div class="main_large">
+        <div class="large_inner clear_fix">
+            <div class="large_img">
+                <img src="img/main-hyundai-in-your-country-pc.jpg" alt="국가별 사이트를
+                방문해 보세요." />
+            </div>
+            <div class="large_txt">
+                <p>국가별 사이트를<br />방문해 보세요.</p>
+                <span>국가별 사이트를 방문하면 더 자세한 정보를<br />확인할 수 있습니다.</span>
+                <a href="/worldwide/ko/onepage/country.kr" class="btn_country">바로가기</a>
+            </div>
+        </div>
+    </div>
+    <!-- // Sites By Country -->
+
+    <!-- Social Media -->
+    <div class="main_social">
+        <div class="imgContent social_inner">
+            <h2>
+                <span class="category">소셜미디어</span>
+                <p>소셜미디어 둘러보기</p>
+            </h2>
+            <div class="social_list">
+                <ul class="sns_area clear_fix">
+                    <li style="background-image:url(img/worldwide-main-instagram-01-8iihs-220315.jpg)">
+                        <a href="https://www.instagram.com/p/Ca3LimLKynU/?taken-by=hyundai_worldwide" target="_blank" title="view on instagram">
+                            <p class="sns_txt">
+                                2022년, 현대자동차 8개 차종이 미국 IIHS 충돌평가에서 최고안전한차로 선정되었습니다. @iihs_autosafety #AutoSafety<br />
+                                <span class="ico_insta"></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li style="background-image:url(img/worldwide-main-instagram-02-womens-day-220315.jpg)">
+                        <a href="https://www.instagram.com/p/Ca07Q8kIAQU/?taken-by=hyundai_worldwide" target="_blank" title="view on instagram">
+                            <p class="sns_txt">
+                                여러분이 없었다면, 세상은 분명 지금과는 달랐을 것입니다.<br />#InternationalWomensDay
+                                <span class="ico_insta"></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li style="background-image:url(img/worldwide-main-instagram-03-ioniq5-220315.jpg)">
+                        <a href="https://www.instagram.com/p/CarRgBarKow/?taken-by=hyundai_worldwide" target="_blank" title="view on instagram">
+                            <p class="sns_txt">
+                                아이오닉 5 고객의 50% 이상이 선택한 스마트 센스 패키지.<br />#PowerYourWorld
+                                <span class="ico_insta"></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li style="background-image:url(img/worldwide-main-instagram-04-asmr-220315.jpg)">
+                        <a href="https://www.instagram.com/p/CaUGs3fj_Ks/?taken-by=hyundai_worldwide" target="_blank" title="view on instagram">
+                            <p class="sns_txt">
+                                🔊온몸의 긴장을 풀고 편안한 휴식을 만끽하고 싶다면? 마음을 안정시키는 이 ASMR 사운드를 감상해보세요.<br />#ASMcaR
+                                <span class="ico_insta"></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li style="background-image:url(img/worldwide-main-instagram-05-asmr-220315.jpg)">
+                        <a href="https://www.instagram.com/p/CaWrGunDu9H/?taken-by=hyundai_worldwide" target="_blank" title="view on instagram">
+                            <p class="sns_txt">
+                                🔊편안히 몸을 기대고 지금 이 순간을 즐겨보세요!<br />#ASMcaR
+                                <span class="ico_insta"></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li style="background-image:url(img/worldwide-main-instagram-06-asmr-220315.jpg)">
+                        <a href="https://www.instagram.com/p/CaZQEKEDoBH/?taken-by=hyundai_worldwide" target="_blank" title="view on instagram">
+                            <p class="sns_txt">
+                                🔊헤드폰을 끼고, 투싼 ASMR과 함께 고요하고 평안한 시간 속으로 빠져보세요.<br />#ASMcaR
+                                <span class="ico_insta"></span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // Social Media -->
+</div>
+<!-- // .Container // Main Layout -->
+
+<!-- Footer -->
+<div class="footer_wrap">
+    <footer class="footer clear_fix">
+        <h2 class="ft_logo">
+            <a href="https://www.hyundai.com/worldwide/ko/">
+                <img src="img/footer_logo_pc.png" alt="Hyundai" />
+            </a>
+        </h2>
+        <!-- 문의/법적고지 -->
+        <ul class="ft_nav">
+            <h3>문의/법적고지</h3>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/contact-legal/legal" target="_self">
+                    법적고지
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/contact-legal/privacy-policy" target="_self">
+                    개인정보 처리방침
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/contact-legal/cookies-policy" target="_self">
+                    쿠키정책
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/contact-legal/site-map" target="_self">
+                    사이트맵
+                </a>
+            </li>
+        </ul>
+        <!-- 기업소개 -->
+        <ul class="ft_nav">
+            <h3>기업소개</h3>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/corporate/affiliates" target="_self">
+                    관계사
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/corporate/networks/global" target="_self">
+                    사업망
+                </a>
+            </li>
+            <li>
+                <a href="https://www.vaatz.com/vsims/view/hksupp/HMC/index.html" target="_blank">
+                    협력업체
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hyundai.com/worldwide/ko/footer/hyundai-experiences/vehicle-history" target="_self">
+                    모델 히스토리
+                </a>
+            </li>
+        </ul>
+        <!-- 관련 사이트 -->
+        <ul class="ft_nav">
+            <h3>관련 사이트</h3>
+            <li>
+                <a href="https://www.hyundai-n.com/" target="_blank">
+                    N
+                </a>
+            </li>
+            <li>
+                <a href="https://motorstudio.hyundai.com/itg/ln/main.do?lang=ko" target="_blank">
+                    현대 모터스튜디오
+                </a>
+            </li>
+            <li>
+                <a href="https://channel.hyundai.com/en/web/tv/tv.view?menuType=TV" target="_blank">
+                    채널현대
+                </a>
+            </li>
+            <li>
+                <a href="https://artlab.hyundai.com/" target="_blank">
+                    현대아트랩
+                </a>
+            </li>
+        </ul>
+        <div class="ft_nav ft_hsm">
+            <h3>Hyundai Social Media</h3>
+            <div class="ft_hsm_box">
+                <h4 class="ft_hsm_tit">Worldwide</h4>
+                <ul class="ft_hsm_link clear_fix">
+                    <li>
+                        <a href="https://www.facebook.com/Hyundaiworldwide" class="facebook" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/hyundai/" class="instagram" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/user/hyundaiworldwide" class="youtube" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/hyundai_global" class="twitter"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft_hsm_box">
+                <h4 class="ft_hsm_tit">Lifestyle</h4>
+                <ul class="ft_hsm_link clear_fix">
+                    <li>
+                        <a href="https://www.instagram.com/hyundai.lifestyle/" class="instar" data-track-name="footer" data-track-description="lifestyle instar" target="_blank">
+                            <img src="img/instagram.png" alt="Lifestyle" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2022 Hyundai Motor Company</p>
+    </footer>
+</div>
+<!-- // Footer -->
+<script src="js/common.js"></script>
+<!-- 공지사항 알림 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+<script src="../js/notice.js"></script>
+<!-- Hashtag Swiper -->
+<script type="text/javascript">
+    var swiper = new Swiper(".hashtagSwiper", {
+        slidesPerView: 8,
+        spaceBetween: 0,
+        freeMode: true,
+    });
+    // Notice.init('본인이름', 'pdf파일경로');
+    Notice.init('오현정', './06-Hyundai.pdf');
+</script>
 </body>
 </html>

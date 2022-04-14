@@ -1,18 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>My Food</title>
+
+    <!-- 크로스 브라우징 호환성 부분 시작  -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <!-- 공지사항 알림 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
-    <script src="../js/notice.js"></script>
-    <script>
-        // Notice.init('본인이름', 'pdf파일경로');
-        Notice.init('오현정', './04-Wedding.pdf');
-    </script>
+<!-- Header -->
+<header id="home">
+    <div>
+        <h1>Jane & John</h1>
+        <h2>Are getting married</h2>
+        <h2>
+            <b>17.07.2017</b>
+        </h2>
+    </div>
+</header>
+
+<!-- fixed Navigation -->
+<div id="navbar">
+    <div class="clear_fix">
+        <a href="#home">Home</a>
+        <a href="#us">Jane & John</a>
+        <a href="#wedding">Wedding</a>
+        <a href="#rsvp">RSVP</a>
+    </div>
+</div>
+
+<!-- About -->
+<div id="us">
+    <div>
+        <h1>
+            <b>Jane & John</b>
+        </h1>
+        <img src="img/wedding_couple2.jpg" alt="us" />
+        <p>
+            <i>
+                You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br />
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br />
+                consequat. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur<br />
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br />
+                ullamcolaboris nisi ut aliquip ex ea commodo consequat.
+            </i>
+        </p>
+        <br />
+        <p>
+            <a href="#wedding">Wedding Details</a>
+        </p>
+    </div>
+</div>
+
+<!-- Background Photo -->
+<div id="bgimg">
+    <div>
+        <h1>You Are Invited</h1>
+        <br />
+        <h2>Of course..</h2>
+    </div>
+</div>
+
+<!-- Wedding Infomation -->
+<div id="wedding">
+    <div>
+        <h1>
+            <b>THE WEDDING</b>
+        </h1>
+        <img src="img/wedding_location.jpg" alt="wedding" />
+        <div class="clear_fix">
+            <div class="harf">
+                <h2>When</h2>
+                <p>Wedding Ceremony - 2:00pm</p>
+                <p>Reception & Dinner - 5:00pm</p>
+            </div>
+            <div class="harf">
+                <h2>Where</h2>
+                <p>Some place, an address</p>
+                <p>Some where, some address</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RSVP -->
+<div id="rsvp">
+    <h1>HOPE YOU CAN MAKE IT!</h1>
+    <p>Kindly Respond By January, 2017</p>
+    <p>
+        <button type="button">RSVP</button>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a>
+    </p>
+</footer>
+
+<!-- 공지사항 알림 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+<script src="../js/notice.js"></script>
+<script>
+    // Notice.init('본인이름', 'pdf파일경로');
+    Notice.init('오현정', './04-Wedding.pdf');
+</script>
 </body>
 </html>
